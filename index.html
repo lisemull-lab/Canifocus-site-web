@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Cani'Focus — Éducation canine positive à Nancy</title>
+  <meta name="description" content="Éducation canine positive, bilans comportementaux, balades et pet sitting à Nancy et alentours. Un accompagnement bienveillant et sur-mesure pour votre chien — Lise Muller.">
+  <meta name="keywords" content="éducation canine, comportement chien, pet sitting, balade canine, méthodes positives, Nancy, Lorraine, Lise Muller">
+  <meta name="author" content="Lise Muller — Cani'Focus">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cani'Focus — Éducation canine positive à Nancy">
+  <meta property="og:description" content="Éducation positive, bilans comportementaux, balades et pet sitting. Un accompagnement bienveillant pour votre chien à Nancy et alentours.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Cani'Focus">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cani'Focus — Éducation canine positive à Nancy">
+  <meta name="twitter:description" content="Éducation positive, bilans comportementaux, balades et pet sitting à Nancy.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="LOGO Cana' Lise A4.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0&display=block" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <button class="logo-btn" data-nav="accueil" aria-label="Accueil — Cani'Focus">
+        <img src="LOGO Cana' Lise A4.png" alt="Cani'Focus — Éducation et comportement canin" class="logo-img">
+      </button>
+
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <button class="nav-link" data-nav="accueil">Accueil</button>
+        <button class="nav-link" data-nav="apropos">À propos</button>
+        <button class="nav-link" data-nav="services">Mes services</button>
+        <button class="nav-link" data-nav="contact">Contact</button>
+        <button class="btn-rdv" data-nav="contact">
+          <span class="ms">event_available</span>Prendre rendez-vous
+        </button>
+      </nav>
+
+      <button class="burger-btn" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="ms" id="burger-icon">menu</span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+      <button class="mobile-nav-link" data-nav="accueil">Accueil</button>
+      <button class="mobile-nav-link" data-nav="apropos">À propos</button>
+      <button class="mobile-nav-link" data-nav="services">Mes services</button>
+      <button class="mobile-nav-link" data-nav="contact">Contact</button>
+      <button class="mobile-nav-cta" data-nav="contact">Prendre rendez-vous</button>
+    </nav>
+  </header>
+
+  <!-- ===================================================== ACCUEIL ===================================================== -->
+  <main id="page-accueil" class="page" data-page="accueil">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg"></div>
+      <div class="hero-pattern"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="ms">pets</span>Éducation &amp; comportement canin · Nancy
+          </div>
+          <h1 class="hero-title reveal" style="--rd:.08s">
+            Votre chien, notre passion.<br>
+            <span class="text-orange">Ensemble, on construit la confiance.</span>
+          </h1>
+          <p class="hero-desc reveal" style="--rd:.16s">
+            Éducation positive, gestion des comportements, balades et pet sitting.
+            Un accompagnement bienveillant et sur-mesure pour des moments complices au quotidien.
+          </p>
+          <div class="hero-actions reveal" style="--rd:.24s">
+            <button class="btn-primary" data-nav="services">
+              <span class="ms">pets</span>Découvrir mes services
+            </button>
+            <button class="btn-ghost" data-nav="contact">Me contacter</button>
+          </div>
+        </div>
+      </div>
+      <span class="scroll-arrow" aria-hidden="true">
+        <span class="ms">keyboard_arrow_down</span>
+      </span>
+    </section>
+
+    <!-- SERVICES APERÇU -->
+    <section class="section-light" aria-labelledby="services-preview-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label label-orange">Ce que je propose</p>
+          <h2 id="services-preview-title" class="section-title title-blue">Un accompagnement complet</h2>
+        </div>
+        <div class="cards-grid">
+          <button class="service-card reveal" data-nav="services" style="--rd:0s">
+            <div class="card-icon"><span class="ms">school</span></div>
+            <h3 class="card-title">Éducation canine</h3>
+            <p class="card-desc">Les bases du quotidien : marche en laisse, rappel, propreté et savoir-vivre, au rythme de votre chien.</p>
+            <span class="card-more">En savoir plus<span class="ms">arrow_forward</span></span>
+          </button>
+          <button class="service-card reveal" data-nav="services" style="--rd:.08s">
+            <div class="card-icon"><span class="ms">psychology</span></div>
+            <h3 class="card-title">Bilan comportemental</h3>
+            <p class="card-desc">Peurs, réactivité, aboiements ou agressivité : on identifie la cause et on construit des solutions durables.</p>
+            <span class="card-more">En savoir plus<span class="ms">arrow_forward</span></span>
+          </button>
+          <button class="service-card reveal" data-nav="services" style="--rd:.16s">
+            <div class="card-icon"><span class="ms">directions_walk</span></div>
+            <h3 class="card-title">Balade canine</h3>
+            <p class="card-desc">Des sorties stimulantes et sécurisées pour dépenser votre chien, physiquement et mentalement.</p>
+            <span class="card-more">En savoir plus<span class="ms">arrow_forward</span></span>
+          </button>
+          <button class="service-card reveal" data-nav="services" style="--rd:.24s">
+            <div class="card-icon"><span class="ms">cottage</span></div>
+            <h3 class="card-title">Pet sitting</h3>
+            <p class="card-desc">Une présence bienveillante quand vous êtes absent, pour un chien serein et bien entouré.</p>
+            <span class="card-more">En savoir plus<span class="ms">arrow_forward</span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- POURQUOI CANI'FOCUS -->
+    <section class="section-blue" aria-labelledby="why-title">
+      <div class="why-pattern"></div>
+      <div class="why-glow"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <div class="section-header reveal">
+          <p class="section-label label-sky">Pourquoi Cani'Focus</p>
+          <h2 id="why-title" class="section-title title-white">Une relation de confiance, vraiment</h2>
+        </div>
+        <div class="reasons-grid">
+          <div class="reason-item reveal" style="--rd:0s">
+            <div class="reason-icon"><span class="ms">volunteer_activism</span></div>
+            <h3 class="reason-title">Méthodes positives</h3>
+            <p class="reason-desc">Renforcement positif et bienveillance : on motive sans jamais contraindre, pour des progrès qui durent.</p>
+          </div>
+          <div class="reason-item reveal" style="--rd:.1s">
+            <div class="reason-icon"><span class="ms">workspace_premium</span></div>
+            <h3 class="reason-title">Expérience de terrain</h3>
+            <p class="reason-desc">De nombreux accompagnements et une formation continue au service de votre binôme.</p>
+          </div>
+          <div class="reason-item reveal" style="--rd:.2s">
+            <div class="reason-icon"><span class="ms">support_agent</span></div>
+            <h3 class="reason-title">Suivi personnalisé</h3>
+            <p class="reason-desc">Chaque chien est unique. Un programme sur-mesure et une présence à vos côtés entre les séances.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVIS -->
+    <section class="section-muted" aria-labelledby="avis-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label label-orange">Avis clients</p>
+          <h2 id="avis-title" class="section-title title-blue">Bientôt, leurs témoignages</h2>
+          <p class="section-intro">Cet espace est réservé aux retours des familles accompagnées. Les premiers avis y seront publiés prochainement.</p>
+        </div>
+        <div class="avis-grid reveal">
+          <div class="avis-placeholder"><span class="ms avis-quote">format_quote</span><span class="avis-soon">avis à venir</span></div>
+          <div class="avis-placeholder"><span class="ms avis-quote">format_quote</span><span class="avis-soon">avis à venir</span></div>
+          <div class="avis-placeholder"><span class="ms avis-quote">format_quote</span><span class="avis-soon">avis à venir</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section-cta" aria-label="Appel à l'action">
+      <div class="cta-pattern"></div>
+      <div class="cta-inner reveal">
+        <h2 class="cta-title">Prêt à commencer l'aventure&nbsp;?</h2>
+        <p class="cta-desc">Parlons de votre chien et de vos objectifs. Le premier échange est sans engagement.</p>
+        <button class="btn-dark" data-nav="contact">
+          <span class="ms">call</span>Me contacter
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================== À PROPOS ===================================================== -->
+  <main id="page-apropos" class="page" data-page="apropos" hidden>
+
+    <section class="page-banner" aria-label="À propos">
+      <div class="banner-bg"></div>
+      <div class="banner-pattern"></div>
+      <div class="banner-inner reveal">
+        <p class="banner-label">À propos</p>
+        <h1 class="banner-title">Faisons connaissance</h1>
+      </div>
+    </section>
+
+    <section class="section-light" aria-labelledby="apropos-name">
+      <div class="container">
+        <div class="apropos-grid">
+          <div class="apropos-photo reveal">
+            <div class="photo-pattern"></div>
+            <div class="photo-placeholder">
+              <span class="ms">photo_camera</span>
+              <span class="photo-hint">portrait — Lise &amp; son chien</span>
+            </div>
+            <div class="photo-badge">
+              <span class="ms badge-check">verified</span>Éducatrice canin
+            </div>
+          </div>
+          <div class="apropos-text reveal" style="--rd:.1s">
+            <h2 id="apropos-name" class="apropos-name">Lise Muller</h2>
+            <p class="apropos-lead">Passionnée par les chiens et leur bien-être, j'accompagne les familles vers une relation sereine et complice.</p>
+            <p class="apropos-bio">Mon approche repose sur l'écoute, la patience et des méthodes 100&nbsp;% positives. Chaque chien a son histoire&nbsp;: je prends le temps de comprendre la vôtre pour bâtir, ensemble, des solutions concrètes et durables — à la maison, en balade ou au quotidien.</p>
+            <div class="apropos-tags">
+              <span class="apropos-tag"><span class="ms">volunteer_activism</span>Méthodes positives</span>
+              <span class="apropos-tag"><span class="ms">location_on</span>Nancy &amp; alentours</span>
+            </div>
+            <button class="btn-blue" data-nav="contact">
+              <span class="ms">chat_bubble</span>Me contacter
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-muted" aria-labelledby="certif-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label label-orange">Mon parcours</p>
+          <h2 id="certif-title" class="section-title title-blue">Mes diplômes &amp; certifications</h2>
+          <p class="section-intro">Des formations reconnues, gage d'un accompagnement professionnel et à jour.</p>
+        </div>
+        <div class="certif-grid">
+          <div class="certif-card reveal" style="--rd:0s">
+            <div class="certif-icon"><span class="ms">workspace_premium</span></div>
+            <div>
+              <h3 class="certif-titre">[ Intitulé du diplôme ]</h3>
+              <p class="certif-organisme">[ Organisme de formation · année ]</p>
+            </div>
+          </div>
+          <div class="certif-card reveal" style="--rd:.08s">
+            <div class="certif-icon"><span class="ms">verified</span></div>
+            <div>
+              <h3 class="certif-titre">[ Certification professionnelle ]</h3>
+              <p class="certif-organisme">[ Organisme · année ]</p>
+            </div>
+          </div>
+          <div class="certif-card reveal" style="--rd:.16s">
+            <div class="certif-icon"><span class="ms">school</span></div>
+            <div>
+              <h3 class="certif-titre">[ Formation complémentaire ]</h3>
+              <p class="certif-organisme">[ Organisme · année ]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================== MES SERVICES ===================================================== -->
+  <main id="page-services" class="page" data-page="services" hidden>
+
+    <section class="page-banner" aria-label="Mes services">
+      <div class="banner-bg"></div>
+      <div class="banner-pattern"></div>
+      <div class="banner-inner reveal">
+        <p class="banner-label">Mes services</p>
+        <h1 class="banner-title">Un accompagnement à chaque étape</h1>
+        <p class="banner-desc">De l'éducation au quotidien jusqu'à la garde, je m'adapte à vous et à votre chien.</p>
+      </div>
+    </section>
+
+    <section class="section-light" aria-label="Détail des services">
+      <div class="container">
+        <div class="services-detail-grid">
+
+          <div class="service-detail-card reveal" style="--rd:0s">
+            <div class="sdc-header">
+              <div class="sdc-icon"><span class="ms">school</span></div>
+              <h2 class="sdc-title">Éducation canine</h2>
+            </div>
+            <p class="sdc-desc">Les bases du quotidien : marche en laisse, rappel, propreté et savoir-vivre, au rythme de votre chien.</p>
+            <div class="sdc-badge"><span class="ms">schedule</span>Chiot ou adulte · à domicile ou en extérieur</div>
+          </div>
+
+          <div class="service-detail-card reveal" style="--rd:.08s">
+            <div class="sdc-header">
+              <div class="sdc-icon"><span class="ms">psychology</span></div>
+              <h2 class="sdc-title">Bilan comportemental</h2>
+            </div>
+            <p class="sdc-desc">Peurs, réactivité, aboiements ou agressivité : on identifie la cause et on construit des solutions durables.</p>
+            <div class="sdc-badge"><span class="ms">schedule</span>Bilan comportemental · plan sur-mesure</div>
+          </div>
+
+          <div class="service-detail-card reveal" style="--rd:.16s">
+            <div class="sdc-header">
+              <div class="sdc-icon"><span class="ms">directions_walk</span></div>
+              <h2 class="sdc-title">Balade canine</h2>
+            </div>
+            <p class="sdc-desc">Des sorties stimulantes et sécurisées pour dépenser votre chien, physiquement et mentalement.</p>
+            <div class="sdc-badge"><span class="ms">schedule</span>Individuelle ou en petit groupe</div>
+          </div>
+
+          <div class="service-detail-card reveal" style="--rd:.24s">
+            <div class="sdc-header">
+              <div class="sdc-icon"><span class="ms">cottage</span></div>
+              <h2 class="sdc-title">Pet sitting</h2>
+            </div>
+            <p class="sdc-desc">Une présence bienveillante quand vous êtes absent, pour un chien serein et bien entouré.</p>
+            <div class="sdc-badge"><span class="ms">schedule</span>À domicile · selon disponibilités</div>
+          </div>
+
+        </div>
+
+        <div class="services-cta reveal">
+          <div class="services-cta-pattern"></div>
+          <div class="services-cta-inner">
+            <h2 class="services-cta-title">Une question sur la formule adaptée&nbsp;?</h2>
+            <p class="services-cta-desc">Chaque chien est différent. Échangeons pour trouver l'accompagnement qui vous correspond.</p>
+            <button class="btn-orange" data-nav="contact">
+              <span class="ms">event_available</span>Prendre rendez-vous
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================== CONTACT ===================================================== -->
+  <main id="page-contact" class="page" data-page="contact" hidden>
+
+    <section class="page-banner" aria-label="Contact">
+      <div class="banner-bg"></div>
+      <div class="banner-pattern"></div>
+      <div class="banner-inner reveal">
+        <p class="banner-label">Contact</p>
+        <h1 class="banner-title">Parlons de votre chien</h1>
+        <p class="banner-desc">Un projet, une difficulté, une simple question&nbsp;? Contactez-moi par téléphone ou par email, je vous réponds rapidement.</p>
+      </div>
+    </section>
+
+    <section class="section-light" aria-label="Coordonnées">
+      <div class="container">
+        <div class="contact-grid">
+          <a href="tel:+33679471482" class="contact-card reveal" style="--rd:0s">
+            <span class="contact-icon"><span class="ms">call</span></span>
+            <span class="contact-label">Téléphone</span>
+            <span class="contact-value">06 79 47 14 82</span>
+          </a>
+          <a href="mailto:canifocus54@gmail.com" class="contact-card reveal" style="--rd:.08s">
+            <span class="contact-icon"><span class="ms">mail</span></span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">canifocus54@gmail.com</span>
+          </a>
+          <div class="contact-card reveal" style="--rd:.16s">
+            <span class="contact-icon"><span class="ms">location_on</span></span>
+            <span class="contact-label">Zone d'intervention</span>
+            <span class="contact-value">Nancy &amp; alentours</span>
+          </div>
+        </div>
+
+        <div class="contact-actions reveal">
+          <a href="tel:+33679471482" class="btn-orange">
+            <span class="ms">call</span>Appeler maintenant
+          </a>
+          <a href="mailto:canifocus54@gmail.com" class="btn-blue">
+            <span class="ms">mail</span>Envoyer un email
+          </a>
+        </div>
+
+        <p class="contact-social-note reveal">Réseaux sociaux bientôt disponibles — restez connectés.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo-wrap">
+          <img src="LOGO Cana' Lise A4.png" alt="Cani'Focus" class="footer-logo">
+        </div>
+        <p class="footer-tagline">Éducation et comportement canin à Nancy. Des méthodes positives pour une relation de confiance.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Navigation</h3>
+        <div class="footer-nav">
+          <button class="footer-nav-link" data-nav="accueil">Accueil</button>
+          <button class="footer-nav-link" data-nav="apropos">À propos</button>
+          <button class="footer-nav-link" data-nav="services">Mes services</button>
+          <button class="footer-nav-link" data-nav="contact">Contact</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Contact</h3>
+        <div class="footer-contact">
+          <a href="tel:+33679471482" class="footer-contact-item">
+            <span class="ms">call</span>06 79 47 14 82
+          </a>
+          <a href="mailto:canifocus54@gmail.com" class="footer-contact-item">
+            <span class="ms">mail</span>canifocus54@gmail.com
+          </a>
+          <span class="footer-contact-item">
+            <span class="ms">location_on</span>Nancy et ses alentours
+          </span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Réseaux sociaux</h3>
+        <p class="footer-social-note">Bientôt disponibles — restez connectés.</p>
+        <div class="footer-social-icons">
+          <span class="social-icon" aria-hidden="true"><span class="ms">photo_camera</span></span>
+          <span class="social-icon" aria-hidden="true"><span class="ms">thumb_up</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cani'Focus · Lise Muller — Tous droits réservés</span>
+      <span>Mentions légales · Politique de confidentialité</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
