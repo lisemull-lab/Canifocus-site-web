@@ -360,10 +360,21 @@ a { color: inherit; }
   background: var(--cf-blue);
 }
 
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  z-index: 0;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, var(--cf-blue-d), var(--cf-blue));
+  background: linear-gradient(120deg, rgba(12,78,115,0.86), rgba(19,106,153,0.76));
+  z-index: 1;
 }
 .hero-pattern {
   position: absolute;
@@ -373,6 +384,7 @@ a { color: inherit; }
     rgba(255, 255, 255, 0.05) 0 2px,
     transparent 2px 26px
   );
+  z-index: 2;
 }
 .hero-glow {
   position: absolute;
@@ -380,6 +392,7 @@ a { color: inherit; }
   background:
     radial-gradient(120% 90% at 80% 28%, rgba(59, 177, 234, 0.35), transparent 55%),
     radial-gradient(90% 80% at 100% 100%, rgba(244, 123, 32, 0.20), transparent 50%);
+  z-index: 2;
 }
 
 .hero-inner {
@@ -1139,6 +1152,92 @@ footer {
 }
 
 /* ===================================================================
+   PHOTO — À PROPOS
+   =================================================================== */
+.apropos-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-lg);
+}
+
+/* ===================================================================
+   GALERIE — HOMEPAGE
+   =================================================================== */
+.section-gallery {
+  background: var(--cf-cream);
+  padding: 0 clamp(18px, 4vw, 40px) clamp(64px, 9vw, 112px);
+}
+.gallery-grid {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-rows: 280px 280px;
+  gap: 16px;
+}
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.gallery-large { grid-row: span 2; }
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s ease;
+}
+.gallery-item:hover img { transform: scale(1.06); }
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 18px 16px;
+  background: linear-gradient(to top, rgba(12,78,115,0.88), transparent);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.gallery-caption .ms { font-size: 18px; color: var(--cf-orange); }
+
+/* ===================================================================
+   PHOTO — SERVICES CARDS
+   =================================================================== */
+.sdc-photo {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 22px;
+  display: block;
+}
+
+/* ===================================================================
+   CREDIT PHOTOS
+   =================================================================== */
+.photos-credit {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+  margin-top: 6px;
+}
+.photos-credit a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ===================================================================
    RESPONSIVE
    =================================================================== */
 
@@ -1155,6 +1254,12 @@ footer {
 
 /* Small Mobile */
 @media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 260px 180px 180px 180px;
+  }
+  .gallery-large { grid-row: span 1; }
+
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .hero-actions .btn-primary,
   .hero-actions .btn-ghost  { width: 100%; justify-content: center; }
