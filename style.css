@@ -1231,6 +1231,8 @@ footer {
   .contact-actions .btn-orange,
   .contact-actions .btn-blue { width: 100%; justify-content: center; }
 
+  .contact-value { font-size: 1.05rem; white-space: nowrap; word-break: normal; }
+
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-bottom { justify-content: center; text-align: center; }
 
