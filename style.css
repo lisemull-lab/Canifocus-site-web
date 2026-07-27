@@ -1165,6 +1165,13 @@ footer {
   margin-bottom: 14px;
 }
 .footer-social-icons { display: flex; gap: 10px; }
+.footer-social-list { display: flex; flex-direction: column; gap: 12px; }
+.footer-social-item { display: flex; align-items: center; gap: 12px; }
+.footer-social-name {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.98rem;
+  font-weight: 600;
+}
 .social-icon {
   width: 42px;
   height: 42px;
