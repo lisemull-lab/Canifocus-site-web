@@ -1183,6 +1183,7 @@ footer {
   color: rgba(255, 255, 255, 0.5);
 }
 .social-icon .ms { font-size: 21px; }
+.social-icon .social-svg { width: 21px; height: 21px; display: block; }
 
 .footer-bottom {
   max-width: 1220px;
