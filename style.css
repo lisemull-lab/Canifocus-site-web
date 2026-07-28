@@ -448,7 +448,7 @@ a { color: inherit; }
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(1.05rem, 1.7vw, 1.3rem);
   line-height: 1.55;
-  margin-top: 22px;
+  margin-top: 32px;
   max-width: 560px;
 }
 
