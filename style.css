@@ -436,7 +436,7 @@ a { color: inherit; }
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   color: #fff;
-  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(1.8rem, 4.4vw, 3.3rem);
   line-height: 1.02;
   letter-spacing: -1.5px;
   margin-top: 22px;
