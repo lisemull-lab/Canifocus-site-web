@@ -439,7 +439,7 @@ a { color: inherit; }
   font-size: clamp(1.8rem, 4.4vw, 3.3rem);
   line-height: 1.02;
   letter-spacing: -1.5px;
-  margin-top: 34px;
+  margin-top: 44px;
   text-wrap: balance;
 }
 .text-orange { color: var(--cf-orange); }
