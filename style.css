@@ -475,9 +475,14 @@ a { color: inherit; }
    SERVICE CARDS (Accueil)
    =================================================================== */
 .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 22px;
+}
+.cards-grid .service-card {
+  flex: 0 1 calc(33.333% - 15px);
+  min-width: 240px;
 }
 
 .service-card {
@@ -514,6 +519,15 @@ a { color: inherit; }
   letter-spacing: -0.3px;
   margin-top: 20px;
 }
+.card-subtitle {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--cf-orange);
+  letter-spacing: 0.2px;
+  margin-top: 3px;
+}
+.card-icon .card-svg { width: 32px; height: 32px; }
 .card-desc {
   color: #4a545d;
   font-size: 0.98rem;
@@ -1242,7 +1256,7 @@ footer {
   .hero-actions .btn-primary,
   .hero-actions .btn-ghost  { width: 100%; justify-content: center; }
 
-  .cards-grid { grid-template-columns: 1fr; }
+  .cards-grid .service-card { flex-basis: 100%; min-width: 0; }
 
   .contact-actions { flex-direction: column; align-items: center; }
   .contact-actions .btn-orange,
