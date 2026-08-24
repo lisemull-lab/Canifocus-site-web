@@ -259,6 +259,7 @@ a { color: inherit; }
 .logo-img {
   height: clamp(52px, 7vw, 80px);
   width: auto;
+  border-radius: 14px;
 }
 
 /* Desktop nav */
