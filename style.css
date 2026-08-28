@@ -1084,6 +1084,11 @@ a { color: inherit; }
   letter-spacing: -0.3px;
   word-break: break-word;
 }
+.contact-email {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  word-break: normal;
+}
 
 .contact-actions {
   display: flex;
@@ -1094,11 +1099,28 @@ a { color: inherit; }
   max-width: 980px;
 }
 
-.contact-social-note {
+.contact-social {
   text-align: center;
-  color: #8a949c;
-  font-size: 0.98rem;
-  margin: 30px auto 0;
+  margin: 40px auto 0;
+}
+.contact-social-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--cf-blue);
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  letter-spacing: -0.4px;
+  margin-bottom: 22px;
+}
+.contact-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 36px;
+}
+.contact-social .footer-social-name { color: var(--cf-blue); }
+.contact-social .social-icon {
+  border-color: rgba(13, 78, 115, 0.22);
+  color: var(--cf-blue);
 }
 
 /* ===================================================================
@@ -1232,6 +1254,11 @@ footer {
   .desktop-nav { gap: 24px; }
 }
 
+/* Titre diplômes sur une seule ligne sur ordinateur */
+@media (min-width: 601px) {
+  #certif-title { white-space: nowrap; }
+}
+
 /* Mobile (< 920px) */
 @media (max-width: 919px) {
   .desktop-nav { display: none; }
@@ -1262,7 +1289,7 @@ footer {
   .contact-actions .btn-orange,
   .contact-actions .btn-blue { width: 100%; justify-content: center; }
 
-  .contact-value { font-size: 1.05rem; white-space: nowrap; word-break: normal; }
+  .contact-email { font-size: 1.05rem; }
 
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-bottom { justify-content: center; text-align: center; }
