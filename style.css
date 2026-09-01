@@ -826,6 +826,7 @@ a { color: inherit; }
   gap: 12px;
   margin-top: 26px;
 }
+.apropos-cta { margin-top: 26px; }
 .apropos-tag {
   display: inline-flex;
   align-items: center;
@@ -1086,6 +1087,11 @@ a { color: inherit; }
 }
 .contact-email {
   font-size: 1.2rem;
+  white-space: nowrap;
+  word-break: normal;
+}
+.contact-zone {
+  font-size: 1.05rem;
   white-space: nowrap;
   word-break: normal;
 }
