@@ -744,7 +744,7 @@ a { color: inherit; }
 
 .apropos-photo {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 2 / 3;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: linear-gradient(
@@ -760,7 +760,7 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center;
   image-orientation: from-image;
 }
 .photo-pattern {
@@ -1310,7 +1310,7 @@ footer {
   .footer-bottom { justify-content: center; text-align: center; }
 
   .apropos-grid { grid-template-columns: 1fr; }
-  .apropos-photo { aspect-ratio: 3 / 2; }
+  .apropos-photo { aspect-ratio: 2 / 3; }
 
   .services-detail-grid { grid-template-columns: 1fr; }
 
