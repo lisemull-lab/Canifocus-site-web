@@ -644,6 +644,13 @@ a { color: inherit; }
   padding: 26px 26px 28px;
   box-shadow: 0 12px 32px rgba(13, 78, 115, 0.06);
 }
+.avis-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--cf-blue);
+  font-size: 1.02rem;
+  margin-top: 6px;
+}
 .avis-text {
   font-style: italic;
   color: #3d464d;
