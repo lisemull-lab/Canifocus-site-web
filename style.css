@@ -612,6 +612,37 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
+  align-items: start;
+}
+.avis-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.avis-photo {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--cf-blue) 6%, #fff);
+  border: 1px solid rgba(13, 78, 115, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: color-mix(in srgb, var(--cf-blue) 32%, transparent);
+}
+.avis-photo .ms { font-size: 38px; }
+.avis-review {
+  background: #fff;
+  border: 1px solid rgba(13, 78, 115, 0.12);
+  border-radius: var(--radius-md);
+  padding: 26px 26px 28px;
+  box-shadow: 0 12px 32px rgba(13, 78, 115, 0.06);
+}
+.avis-text {
+  font-style: italic;
+  color: #3d464d;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-top: 8px;
 }
 .avis-placeholder {
   border: 2px dashed color-mix(in srgb, var(--cf-blue) 30%, transparent);
@@ -888,7 +919,13 @@ a { color: inherit; }
   margin-top: 4px;
   line-height: 1.2;
 }
-.certif-option { font-weight: 400; }
+.certif-option {
+  display: block;
+  font-weight: 400;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  margin-top: 2px;
+}
 .certif-organisme {
   color: #6b757d;
   font-size: 0.98rem;
