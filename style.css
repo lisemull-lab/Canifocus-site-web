@@ -903,6 +903,7 @@ a { color: inherit; }
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 22px;
 }
+.certif-card-full { grid-column: 1 / -1; }
 .certif-card {
   display: flex;
   align-items: flex-start;
