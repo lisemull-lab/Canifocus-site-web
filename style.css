@@ -644,12 +644,32 @@ a { color: inherit; }
   padding: 26px 26px 28px;
   box-shadow: 0 12px 32px rgba(13, 78, 115, 0.06);
 }
+.avis-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avis-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: #f5a623;
+}
+.avis-stars .ms { font-size: 19px; }
+.avis-source {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #8a949c;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
 .avis-name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: var(--cf-blue);
   font-size: 1.02rem;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .avis-text {
   font-style: italic;
@@ -670,8 +690,9 @@ a { color: inherit; }
   background: rgba(255, 255, 255, 0.45);
 }
 .avis-quote {
-  font-size: 40px;
+  font-size: 32px;
   color: color-mix(in srgb, var(--cf-blue) 45%, transparent);
+  flex: none;
 }
 .avis-soon {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
