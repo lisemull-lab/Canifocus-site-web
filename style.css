@@ -638,9 +638,9 @@ a { color: inherit; }
   object-position: center 30%;
 }
 .avis-photo-kenza {
-  object-position: center 42%;
+  object-position: center 52%;
   transform: scale(1.25);
-  transform-origin: center 42%;
+  transform-origin: center 52%;
 }
 .avis-review {
   background: #fff;
